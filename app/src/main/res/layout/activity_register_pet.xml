@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título del formulario -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐾 Registro de Mascota 🐾"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nombre de la mascota -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la mascota"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Especie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especie"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la especie"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Raza -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raza"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la raza"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Edad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la edad"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Peso -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso (kg)"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el peso"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Género -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Macho" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hembra"
+                android:layout_marginStart="16dp"/>
+        </RadioGroup>
+
+        <!-- Fecha de Nacimiento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Nacimiento"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccione la fecha"
+            android:inputType="date"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Vacunas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacunas"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etVaccines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese las vacunas"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Alergias -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alergias"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese las alergias"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Enfermedades Crónicas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfermedades Crónicas"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etChronicDiseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese las enfermedades crónicas"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para registrar la mascota -->
+        <Button
+            android:id="@+id/btnRegisterPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Mascota"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

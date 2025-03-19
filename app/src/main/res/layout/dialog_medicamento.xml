@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Nombre del medicamento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNombreMedicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del medicamento"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Dosis -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosis"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Frecuencia -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frecuencia"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFrecuencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white" />
+</LinearLayout>

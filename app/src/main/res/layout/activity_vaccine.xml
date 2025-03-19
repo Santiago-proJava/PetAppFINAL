@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Vaccine Tracker"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/petNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:minHeight="48dp"
+        android:hint="Nombre de la mascota"
+        android:padding="12dp"/>
+
+    <Spinner
+        android:id="@+id/vaccineSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@android:drawable/btn_dropdown"/>
+
+    <Button
+        android:id="@+id/addVaccineButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Vacuna"
+        android:minHeight="48dp"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/petNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la mascota: "
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <ListView
+        android:id="@+id/vaccineListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

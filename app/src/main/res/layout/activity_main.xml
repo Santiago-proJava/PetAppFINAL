@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnGoRegisterPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Mascota" />
+
+    <Button
+        android:id="@+id/btnGoVaccine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar Vacunas" />
+
+    <Button
+        android:id="@+id/btnGoWeightControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Control de Peso" />
+
+    <Button
+        android:id="@+id/btnGoDietControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Control de Dieta" />
+
+    <Button
+        android:id="@+id/btnGoMedication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Control de Medicamentos" />
+
+    <Button
+        android:id="@+id/btnGoPhysicalActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Actividad Física" />
+
+</LinearLayout>

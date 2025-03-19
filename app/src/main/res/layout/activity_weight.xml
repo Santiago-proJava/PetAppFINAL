@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Información de la mascota (imagen e info) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ivPetPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre: Max"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tvPetAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad: 3 años"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tvPetBreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raza: Golden Retriever"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón para agregar un registro de peso -->
+    <Button
+        android:id="@+id/btnAddRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGREGAR REGISTRO"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Contenedor para mostrar la lista de registros -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <!-- Encabezado de la tabla -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/green"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Peso (kg)"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fecha"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- RecyclerView para los registros -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</LinearLayout>

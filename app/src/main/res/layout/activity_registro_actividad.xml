@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Formulario de ingreso -->
+    <EditText
+        android:id="@+id/etTipoActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de actividad (paseo, juego, etc.)" />
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duración (minutos)" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar actividad" />
+
+    <!-- Lista de actividades registradas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvActividades"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

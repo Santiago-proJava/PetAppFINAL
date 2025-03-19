@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    android:layout_marginBottom="4dp"
+    android:backgroundTint="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="25.5"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="10/10/2023"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+</LinearLayout>

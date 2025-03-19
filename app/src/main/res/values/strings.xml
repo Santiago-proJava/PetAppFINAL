@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="desc_user_icon">Ícono de usuario</string>
+    <string name="agregar_medicamento">Agregar medicamento</string>
+</resources>

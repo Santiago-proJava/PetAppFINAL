@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/MM/yyyy)"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green"/>
+</LinearLayout>
